@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:text="Inspiring Quote Goes Here"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-black" />
+
+    <GridLayout
+        android:id="@+id/buttonGridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quoteTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next Quote"
+            android:backgroundTint="#0C5086"
+            android:layout_margin="16dp"
+            android:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Quote"
+            android:backgroundTint="#0C5086"
+            android:layout_margin="16dp"
+            android:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Quote"
+            android:backgroundTint="#0C5086"
+            android:layout_margin="16dp"
+            android:layout_gravity="fill_horizontal" />
+
+        <Button
+            android:id="@+id/viewFavoritesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Favorites"
+            android:backgroundTint="#0C5086"
+            android:layout_margin="16dp"
+            android:layout_gravity="fill_horizontal" />
+
+    </GridLayout>
+
+</RelativeLayout>
